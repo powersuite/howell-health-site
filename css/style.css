@@ -435,13 +435,25 @@ p + p { margin-top: 1em; }
 
 /* --- Section 4: Problem / Agitation --- */
 .problem-section {
-  background: var(--white);
+  background: var(--light-bg);
+}
+
+.problem-layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.problem-image img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
 }
 
 .problem-content {
-  max-width: 780px;
-  margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .problem-content h2 {
@@ -451,6 +463,21 @@ p + p { margin-top: 1em; }
 .problem-content p {
   color: var(--gray);
   font-size: 1.05rem;
+}
+
+.problem-callout {
+  border-left: 4px solid var(--teal);
+  background: var(--white);
+  padding: 20px 24px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 20px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.problem-callout p {
+  color: var(--dark-text);
+  font-weight: 600;
+  margin: 0;
 }
 
 .problem-content p strong {
@@ -923,6 +950,15 @@ p + p { margin-top: 1em; }
   }
   .hamburger {
     display: flex;
+  }
+
+  /* Problem */
+  .problem-layout {
+    grid-template-columns: 1fr;
+  }
+  .problem-image {
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   /* Hero */
