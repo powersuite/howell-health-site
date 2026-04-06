@@ -435,7 +435,7 @@ p + p { margin-top: 1em; }
 
 /* --- Section 4: Problem / Agitation --- */
 .problem-section {
-  background: var(--light-bg);
+  background: var(--white);
 }
 
 .problem-layout {
