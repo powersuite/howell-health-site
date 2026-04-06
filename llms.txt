@@ -1,0 +1,27 @@
+# Howell Health Insurance Group
+> Independent health insurance agency in Brevard County, Florida
+
+## About
+Scott Howell is a licensed independent health insurance agent serving Brevard County, Florida and clients across 30+ states. He shops Florida Blue, United Healthcare, Cigna, and other top carriers to find private-sector PPO rates that aren't listed on public exchanges. His services are free to clients — carriers pay his commission.
+
+## Key Pages
+- Homepage: https://howellhealthfl.com/
+- About Scott: https://howellhealthfl.com/about/
+- Services: https://howellhealthfl.com/services/
+- Get a Quote: https://howellhealthfl.com/quote/
+- FAQ: https://howellhealthfl.com/faq/
+- Blog: https://howellhealthfl.com/blog/
+- Contact: https://howellhealthfl.com/contact/
+
+## Services
+- Private PPO Health Plans
+- ACA / Marketplace Plans
+- Life Insurance
+- Dental, Vision & Hearing
+- Supplemental & Critical Illness
+- Income Protection
+
+## Contact
+- Phone: (321) XXX-XXXX
+- Email: howellhealthfl@gmail.com
+- Location: Brevard County, Florida
