@@ -1528,6 +1528,20 @@ p + p { margin-top: 1em; }
   font-size: 1.5rem;
 }
 
+/* FAQ Page — white background sections with gray FAQ items */
+.faq-page-section {
+  background: var(--white);
+}
+
+.faq-page-section .faq-item {
+  background: var(--light-bg);
+  border-color: var(--light-bg);
+}
+
+.faq-page-section .faq-item summary:hover {
+  background: #e4eaf0;
+}
+
 /* ============================================
    Contact Page
    ============================================ */
