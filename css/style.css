@@ -1406,8 +1406,7 @@ p + p { margin-top: 1em; }
 }
 
 .service-detail-text {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: none;
 }
 
 .service-detail-text h2 {
