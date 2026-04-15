@@ -1669,7 +1669,7 @@ p + p { margin-top: 1em; }
   background: var(--white);
   border: 1px solid #e8ecf0;
   border-radius: var(--radius-lg);
-  padding: 40px;
+  padding: 36px;
   box-shadow: var(--shadow-md);
 }
 
@@ -1808,7 +1808,7 @@ p + p { margin-top: 1em; }
   background: var(--white);
   border: 1px solid #e8ecf0;
   border-radius: var(--radius-lg);
-  padding: 28px;
+  padding: 36px;
   box-shadow: var(--shadow-sm);
 }
 
