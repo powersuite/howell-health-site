@@ -1492,7 +1492,8 @@ p + p { margin-top: 1em; }
 }
 
 .service-card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
@@ -1504,6 +1505,15 @@ p + p { margin-top: 1em; }
 .service-card-link h2 {
   font-size: 1.25rem;
   margin-bottom: 12px;
+}
+
+.service-card-link p {
+  margin-bottom: 0;
+}
+
+.service-card-link .learn-more {
+  margin-top: auto;
+  padding-top: 16px;
 }
 
 /* FAQ Category Headings */
