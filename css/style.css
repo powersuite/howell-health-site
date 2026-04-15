@@ -1375,12 +1375,15 @@ p + p { margin-top: 1em; }
 
 .service-detail-hero {
   background: var(--light-bg);
+  text-align: center;
 }
 
 .service-detail-content h1 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-detail-answer {
@@ -1388,13 +1391,14 @@ p + p { margin-top: 1em; }
   line-height: 1.7;
   color: var(--gray);
   max-width: 760px;
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
 }
 
 .service-detail-ctas {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .service-detail-body {
