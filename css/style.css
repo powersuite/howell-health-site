@@ -682,20 +682,17 @@ p + p { margin-top: 1em; }
 }
 
 .carrier-logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--gray);
-  opacity: 0.65;
-  transition: opacity var(--transition);
-  white-space: nowrap;
-  padding: 12px 24px;
-  border: 1px solid #e0e5ea;
-  border-radius: var(--radius);
-  background: var(--light-bg);
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.35);
+  opacity: 0.8;
+  transition: opacity var(--transition), filter var(--transition);
 }
 
 .carrier-logo:hover {
   opacity: 1;
+  filter: grayscale(100%) brightness(0.2);
 }
 
 /* --- Section 9: Testimonials --- */
@@ -1012,8 +1009,7 @@ p + p { margin-top: 1em; }
     gap: 16px;
   }
   .carrier-logo {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    height: 32px;
   }
 
   /* Testimonials */
