@@ -203,12 +203,15 @@ p + p { margin-top: 1em; }
 }
 
 /* --- Section 2: Navigation --- */
-.site-header {
-  background: var(--white);
-  border-bottom: 1px solid #e8ecf0;
+#site-header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid #e8ecf0;
 }
 
 .nav-wrapper {

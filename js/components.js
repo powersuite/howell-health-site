@@ -18,7 +18,18 @@
   else fetches.push(Promise.resolve(''));
 
   Promise.all(fetches).then(function (parts) {
-    if (headerEl) headerEl.innerHTML = parts[0];
+    if (headerEl) {
+      // Parse the header HTML and split into parts so announcement bar
+      // and mobile nav live outside #site-header, allowing it to be sticky
+      var tmp = document.createElement('div');
+      tmp.innerHTML = parts[0];
+      var announcement = tmp.querySelector('.announcement-bar');
+      var nav = tmp.querySelector('.site-header');
+      var mobileNavEl = tmp.querySelector('.mobile-nav');
+      if (announcement) headerEl.parentNode.insertBefore(announcement, headerEl);
+      if (nav) headerEl.appendChild(nav);
+      if (mobileNavEl) headerEl.parentNode.insertBefore(mobileNavEl, headerEl.nextSibling);
+    }
     if (footerEl) footerEl.innerHTML = parts[1];
     initComponents();
   });
