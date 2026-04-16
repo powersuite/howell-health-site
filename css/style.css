@@ -1140,6 +1140,12 @@ p + p { margin-top: 1em; }
   object-fit: cover;
 }
 
+.about-story-photo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* About Credentials */
 .about-credentials {
   background: var(--light-bg);
