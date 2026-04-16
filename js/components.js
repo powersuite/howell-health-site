@@ -26,9 +26,11 @@
       var announcement = tmp.querySelector('.announcement-bar');
       var nav = tmp.querySelector('.site-header');
       var mobileNavEl = tmp.querySelector('.mobile-nav');
+      var stickyBar = tmp.querySelector('.mobile-sticky-bar');
       if (announcement) headerEl.parentNode.insertBefore(announcement, headerEl);
       if (nav) headerEl.appendChild(nav);
       if (mobileNavEl) headerEl.parentNode.insertBefore(mobileNavEl, headerEl.nextSibling);
+      if (stickyBar) document.body.appendChild(stickyBar);
     }
     if (footerEl) {
       footerEl.innerHTML = parts[1];

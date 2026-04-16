@@ -2277,11 +2277,74 @@ p + p { margin-top: 1em; }
   border: 0;
 }
 
+/* --- Mobile Sticky CTA Bar --- */
+.mobile-sticky-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Hide "Get a Quote" button in header on mobile */
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* Show and style the sticky bottom bar */
+  .mobile-sticky-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    z-index: 999;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-sticky-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .mobile-sticky-quote {
+    background: var(--orange);
+  }
+
+  .mobile-sticky-quote:hover,
+  .mobile-sticky-quote:focus {
+    background: var(--orange-hover);
+    color: var(--white);
+  }
+
+  .mobile-sticky-call {
+    background: var(--teal);
+  }
+
+  .mobile-sticky-call:hover,
+  .mobile-sticky-call:focus {
+    background: var(--teal-light);
+    color: var(--white);
+  }
+
+  /* Reserve space at bottom of page: 56px bar + 70px chat widget clearance */
+  body {
+    padding-bottom: 126px;
+  }
+}
+
 /* --- Print --- */
 @media print {
   .announcement-bar,
   .site-header,
   .mobile-nav,
+  .mobile-sticky-bar,
   .final-cta,
   .site-footer { display: none; }
   body { font-size: 12pt; color: #000; }
