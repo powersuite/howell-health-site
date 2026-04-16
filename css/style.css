@@ -204,6 +204,7 @@ p + p { margin-top: 1em; }
 
 /* --- Section 2: Navigation --- */
 #site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
