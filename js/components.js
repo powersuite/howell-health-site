@@ -30,7 +30,20 @@
       if (nav) headerEl.appendChild(nav);
       if (mobileNavEl) headerEl.parentNode.insertBefore(mobileNavEl, headerEl.nextSibling);
     }
-    if (footerEl) footerEl.innerHTML = parts[1];
+    if (footerEl) {
+      footerEl.innerHTML = parts[1];
+      // Re-create <script> tags so they actually execute (innerHTML skips them)
+      var scripts = footerEl.querySelectorAll('script');
+      for (var s = 0; s < scripts.length; s++) {
+        var old = scripts[s];
+        var fresh = document.createElement('script');
+        for (var a = 0; a < old.attributes.length; a++) {
+          fresh.setAttribute(old.attributes[a].name, old.attributes[a].value);
+        }
+        if (old.textContent) fresh.textContent = old.textContent;
+        old.parentNode.replaceChild(fresh, old);
+      }
+    }
     initComponents();
   });
 
