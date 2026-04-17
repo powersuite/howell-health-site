@@ -2454,6 +2454,10 @@ a.service-area-card:hover {
   background: var(--white);
 }
 
+.location-hero + .location-content {
+  padding-top: 48px;
+}
+
 .location-content h2 {
   margin-bottom: 20px;
 }
