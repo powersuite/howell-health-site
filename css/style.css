@@ -222,7 +222,7 @@ p + p { margin-top: 1em; }
   padding: 0 24px;
   max-width: var(--max-width);
   margin: 0 auto;
-  height: 72px;
+  height: 80px;
 }
 
 .nav-logo {
