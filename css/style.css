@@ -442,6 +442,10 @@ p + p { margin-top: 1em; }
   background: var(--white);
 }
 
+.problem-headline {
+  margin-bottom: 36px;
+}
+
 .problem-layout {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -458,10 +462,6 @@ p + p { margin-top: 1em; }
 
 .problem-content {
   text-align: left;
-}
-
-.problem-content h2 {
-  margin-bottom: 24px;
 }
 
 .problem-content p {
