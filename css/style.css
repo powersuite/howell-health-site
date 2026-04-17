@@ -2348,47 +2348,73 @@ p + p { margin-top: 1em; }
   background: var(--light-bg);
 }
 
-.service-areas-featured {
-  max-width: 520px;
-  margin: 0 auto 32px;
+.service-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
-.service-area-featured-link {
+.service-area-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  text-align: center;
+  gap: 8px;
   background: var(--white);
   border: 2px solid var(--teal);
   border-radius: var(--radius-lg);
-  padding: 24px 28px;
+  padding: 28px 24px;
   text-decoration: none;
   color: var(--dark-text);
   transition: all var(--transition);
+  position: relative;
 }
 
-.service-area-featured-link:hover {
+a.service-area-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
   color: var(--dark-text);
 }
 
-.service-area-featured-icon {
-  font-size: 2rem;
-  color: var(--orange);
-  flex-shrink: 0;
+.service-area-card-muted {
+  border-color: #d0d5dd;
+  opacity: 0.7;
+  cursor: default;
 }
 
-.service-area-featured-link strong {
+.service-area-card-icon {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.service-area-card-muted .service-area-card-icon {
+  color: var(--gray);
+}
+
+.service-area-card strong {
   display: block;
   font-size: 1.15rem;
   color: var(--navy);
-  margin-bottom: 4px;
 }
 
-.service-area-featured-desc {
+.service-area-card-desc {
   display: block;
   font-size: 0.9rem;
   color: var(--gray);
+}
+
+.service-area-coming-soon {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+  background: var(--light-bg);
+  padding: 3px 12px;
+  border-radius: 12px;
 }
 
 .service-areas-states {
@@ -2542,9 +2568,11 @@ p + p { margin-top: 1em; }
   .carrier-grid-location {
     grid-template-columns: repeat(2, 1fr);
   }
-  .service-area-featured-link {
-    flex-direction: column;
-    text-align: center;
+  .service-areas-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
