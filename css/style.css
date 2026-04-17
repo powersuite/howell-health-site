@@ -2458,6 +2458,10 @@ a.service-area-card:hover {
   padding-top: 48px;
 }
 
+.location-content + .location-content {
+  padding-top: 0;
+}
+
 .location-content h2 {
   margin-bottom: 20px;
 }
