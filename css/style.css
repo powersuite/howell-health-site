@@ -456,6 +456,7 @@ p + p { margin-top: 1em; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   object-fit: cover;
+  transform: scaleX(-1);
 }
 
 .problem-content {
