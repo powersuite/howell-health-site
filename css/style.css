@@ -2383,13 +2383,15 @@ a.service-area-card:hover {
   cursor: default;
 }
 
-.service-area-state-svg {
-  width: auto;
-  height: 45px;
+.service-area-flag {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
-.service-area-card-muted .service-area-state-svg path {
-  fill: var(--gray);
+.service-area-card-muted .service-area-flag {
+  filter: grayscale(60%);
 }
 
 .service-area-card strong {
