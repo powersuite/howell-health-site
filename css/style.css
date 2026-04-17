@@ -2383,13 +2383,13 @@ a.service-area-card:hover {
   cursor: default;
 }
 
-.service-area-card-icon {
-  font-size: 2rem;
-  color: var(--orange);
+.service-area-state-svg {
+  width: auto;
+  height: 45px;
 }
 
-.service-area-card-muted .service-area-card-icon {
-  color: var(--gray);
+.service-area-card-muted .service-area-state-svg path {
+  fill: var(--gray);
 }
 
 .service-area-card strong {
@@ -2404,18 +2404,6 @@ a.service-area-card:hover {
   color: var(--gray);
 }
 
-.service-area-coming-soon {
-  display: inline-block;
-  margin-top: 4px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--gray);
-  background: var(--light-bg);
-  padding: 3px 12px;
-  border-radius: 12px;
-}
 
 .service-areas-states {
   text-align: center;
