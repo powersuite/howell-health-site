@@ -2424,6 +2424,7 @@ a.service-area-card:hover {
   background: linear-gradient(135deg, var(--navy) 0%, #244b73 100%);
   color: var(--white);
   text-align: center;
+  padding-bottom: 48px;
 }
 
 .location-hero h1 {
