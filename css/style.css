@@ -384,9 +384,6 @@ p + p { margin-top: 1em; }
   font-size: 3.5rem;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-content p {
