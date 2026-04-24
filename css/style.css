@@ -2584,6 +2584,16 @@ a.service-area-card:hover {
   }
 }
 
+/* --- Chat Widget Mobile Offset --- */
+@media (max-width: 767px) {
+  #chat-widget-container,
+  .chat-widget-container,
+  [id^="lc_chat_widget"],
+  iframe[src*="leadconnectorhq"] {
+    bottom: 70px !important;
+  }
+}
+
 /* --- Print --- */
 @media print {
   .announcement-bar,
