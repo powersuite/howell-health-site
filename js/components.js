@@ -1,6 +1,6 @@
 /* ============================================
    Shared Header & Footer Loader
-   Howell Health Insurance Group
+   Howell Insurance Group
    ============================================ */
 
 (function () {
