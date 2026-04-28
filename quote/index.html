@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Health Insurance Quote | Howell Health FL</title>
-  <meta name="description" content="Get a free, no-obligation health insurance quote. Answer 4 quick questions and Scott Howell will shop top carriers to find your best rate. Brevard County, FL.">
+  <title>Get a Free Quote | Howell Insurance Group</title>
+  <meta name="description" content="Get a free health insurance quote from Scott Howell, licensed independent agent serving Florida and 30 states.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://howellinsurancegroup.com/quote/">
 
   <meta property="og:title" content="Get a Free Health Insurance Quote | Howell Insurance Group">
-  <meta property="og:description" content="Answer 4 quick questions and get a free plan comparison from a licensed independent agent in Brevard County, FL.">
+  <meta property="og:description" content="Answer a few quick questions and get a free plan comparison from a licensed independent agent.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://howellinsurancegroup.com/quote/">
   <meta property="og:image" content="https://howellinsurancegroup.com/images/scott-howell-headshot-600.jpg">
@@ -17,7 +17,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <script type="application/ld+json">
@@ -30,248 +29,1021 @@
     ]
   }
   </script>
+
+  <style>
+    /* ---- Reset ---- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #2D3436;
+      background: #fff;
+      min-height: 100dvh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- Screen reader only ---- */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0;
+      margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+
+    /* ---- Progress Bar ---- */
+    #progress-bar-container {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: 4px; background: #e2e8f0; z-index: 100;
+    }
+    #progress-bar-fill {
+      height: 100%; background: #2A9D8F;
+      transition: width 0.4s ease; width: 12%;
+    }
+
+    /* ---- Back Button ---- */
+    #back-btn {
+      position: fixed; top: 14px; left: 16px;
+      font-size: 14px; font-family: inherit;
+      color: #636E72; text-decoration: none;
+      display: flex; align-items: center; gap: 4px;
+      z-index: 100; padding: 6px 10px;
+      border-radius: 6px; background: none; border: none;
+      cursor: pointer; transition: color 0.2s, background 0.2s;
+    }
+    #back-btn:hover { color: #1B3A5C; background: #f0f4f8; }
+    #back-btn:focus-visible { outline: 3px solid #2A9D8F; outline-offset: 2px; }
+
+    /* ---- Form Container ---- */
+    #form-container {
+      min-height: 100dvh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 64px 20px 48px;
+    }
+
+    /* ---- Screens ---- */
+    .screen {
+      display: none; width: 100%; max-width: 480px; text-align: center;
+    }
+    .screen.active {
+      display: block;
+      animation: fadeUp 0.35s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- Scott's headshot ---- */
+    .scott-photo {
+      width: 64px; height: 64px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 3px solid #2A9D8F;
+      display: block; margin: 0 auto 12px;
+    }
+
+    /* ---- Brand logo ---- */
+    .form-logo {
+      display: flex; align-items: center; justify-content: center;
+      gap: 7px; margin-bottom: 28px; text-decoration: none;
+    }
+    .form-logo img { width: 18px; height: 18px; flex-shrink: 0; }
+    .form-logo-text {
+      font-size: 11px; font-weight: 700; color: #1B3A5C;
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+
+    /* ---- Headings ---- */
+    .screen-heading {
+      font-size: 26px; font-weight: 700; color: #1B3A5C;
+      margin-bottom: 8px; line-height: 1.3;
+    }
+    .screen-subtext {
+      font-size: 15px; color: #636E72; margin-bottom: 28px; line-height: 1.5;
+    }
+
+    /* ---- Option Buttons (full-width stacked) ---- */
+    .options-list {
+      display: flex; flex-direction: column; gap: 12px;
+      margin: 0 auto; max-width: 400px;
+    }
+    .option-btn {
+      display: flex; align-items: center; gap: 14px;
+      width: 100%; padding: 16px 20px;
+      background: #fff; border: 2px solid #e2e8f0; border-radius: 12px;
+      cursor: pointer; font-family: inherit; font-size: 16px;
+      font-weight: 500; color: #1B3A5C; text-align: left;
+      transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    }
+    .option-btn:hover { border-color: #2A9D8F; background: #f0faf9; transform: translateY(-1px); }
+    .option-btn:focus-visible { outline: 3px solid #2A9D8F; outline-offset: 2px; }
+    .option-btn.selected { border-color: #2A9D8F; background: #f0faf9; }
+    .option-icon { font-size: 22px; flex-shrink: 0; line-height: 1; }
+    .option-label { flex: 1; }
+
+    /* ---- State grid ---- */
+    .state-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px; max-width: 400px; margin: 0 auto 12px;
+    }
+    .state-btn {
+      padding: 14px 12px; background: #fff;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      cursor: pointer; font-family: inherit; font-size: 15px;
+      font-weight: 500; color: #1B3A5C; text-align: center;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .state-btn:hover { border-color: #2A9D8F; background: #f0faf9; }
+    .state-btn:focus-visible { outline: 3px solid #2A9D8F; outline-offset: 2px; }
+    .state-btn.selected { border-color: #2A9D8F; background: #f0faf9; }
+
+    .other-state-btn {
+      display: block; width: 100%; max-width: 400px; margin: 0 auto;
+      padding: 13px 16px; background: #fff;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      cursor: pointer; font-family: inherit; font-size: 15px;
+      font-weight: 500; color: #636E72; text-align: center;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .other-state-btn:hover { border-color: #2A9D8F; background: #f0faf9; }
+    .other-state-btn:focus-visible { outline: 3px solid #2A9D8F; outline-offset: 2px; }
+
+    #other-state-select-wrapper {
+      display: none; max-width: 400px; margin: 10px auto 0;
+    }
+    #other-state-select {
+      width: 100%; padding: 13px 16px;
+      border: 2px solid #2A9D8F; border-radius: 10px;
+      font-family: inherit; font-size: 15px; color: #1B3A5C;
+      background: #fff; cursor: pointer;
+    }
+    #other-state-select:focus { outline: none; border-color: #1B3A5C; }
+
+    /* ---- Continue / Primary buttons ---- */
+    .continue-btn, .btn-primary {
+      display: block; width: 100%; max-width: 400px;
+      margin: 20px auto 0; padding: 16px 24px;
+      background: #E76F51; color: #fff; border: none; border-radius: 12px;
+      font-family: inherit; font-size: 17px; font-weight: 600;
+      cursor: pointer; text-align: center; text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .continue-btn:hover, .btn-primary:hover { background: #d45a3b; transform: translateY(-1px); }
+    .continue-btn:focus-visible, .btn-primary:focus-visible { outline: 3px solid #E76F51; outline-offset: 3px; }
+    .continue-btn:disabled, .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    /* ---- Zip input ---- */
+    .zip-wrapper { max-width: 240px; margin: 0 auto; }
+    .zip-wrapper input {
+      width: 100%; padding: 18px 20px;
+      border: 2px solid #e2e8f0; border-radius: 12px;
+      font-family: inherit; font-size: 28px; font-weight: 700;
+      color: #1B3A5C; text-align: center; letter-spacing: 0.12em;
+      transition: border-color 0.2s;
+    }
+    .zip-wrapper input:focus { outline: none; border-color: #2A9D8F; }
+
+    /* ---- Age input ---- */
+    .age-wrapper { max-width: 180px; margin: 0 auto; }
+    .age-wrapper input {
+      width: 100%; padding: 18px 20px;
+      border: 2px solid #e2e8f0; border-radius: 12px;
+      font-family: inherit; font-size: 36px; font-weight: 700;
+      color: #1B3A5C; text-align: center;
+      transition: border-color 0.2s;
+    }
+    .age-wrapper input:focus { outline: none; border-color: #2A9D8F; }
+
+    /* ---- Toggle buttons (family members) ---- */
+    .toggle-group {
+      display: flex; gap: 10px; max-width: 400px;
+      margin: 0 auto 4px; flex-wrap: wrap; justify-content: center;
+    }
+    .toggle-btn {
+      padding: 12px 22px; background: #fff;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      cursor: pointer; font-family: inherit; font-size: 15px;
+      font-weight: 500; color: #1B3A5C;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+    .toggle-btn:hover { border-color: #2A9D8F; background: #f0faf9; }
+    .toggle-btn:focus-visible { outline: 3px solid #2A9D8F; outline-offset: 2px; }
+    .toggle-btn.selected { border-color: #2A9D8F; background: #2A9D8F; color: #fff; }
+
+    /* ---- Count buttons (children) ---- */
+    .count-group {
+      display: flex; gap: 10px; max-width: 400px;
+      margin: 0 auto; flex-wrap: wrap; justify-content: center;
+    }
+    .count-btn {
+      min-width: 58px; padding: 12px 14px; background: #fff;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      cursor: pointer; font-family: inherit; font-size: 15px;
+      font-weight: 600; color: #1B3A5C;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+    .count-btn:hover { border-color: #2A9D8F; background: #f0faf9; }
+    .count-btn:focus-visible { outline: 3px solid #2A9D8F; outline-offset: 2px; }
+    .count-btn.selected { border-color: #2A9D8F; background: #2A9D8F; color: #fff; }
+
+    /* ---- Sub-labels ---- */
+    .sub-label {
+      font-size: 15px; font-weight: 600; color: #1B3A5C;
+      margin-bottom: 12px; text-align: center;
+    }
+
+    /* ---- Divider ---- */
+    .divider { width: 40px; height: 2px; background: #e2e8f0; border-radius: 2px; margin: 22px auto; }
+
+    /* ---- Text inputs / textarea ---- */
+    .field-wrap { max-width: 400px; margin: 0 auto; text-align: left; }
+    .field-wrap label { display: block; font-size: 13px; font-weight: 600; color: #1B3A5C; margin-bottom: 6px; }
+    .field-wrap input, .field-wrap textarea {
+      width: 100%; padding: 14px 16px;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      font-family: inherit; font-size: 16px; color: #2D3436; background: #fff;
+      transition: border-color 0.2s;
+    }
+    .field-wrap input:focus, .field-wrap textarea:focus { outline: none; border-color: #2A9D8F; }
+    .field-wrap textarea { resize: vertical; min-height: 110px; }
+
+    /* ---- Doctor reveal ---- */
+    #doctor-name-wrap {
+      display: none; max-width: 400px; margin: 16px auto 0; text-align: left;
+    }
+    #doctor-name-wrap label { display: block; font-size: 13px; font-weight: 600; color: #1B3A5C; margin-bottom: 6px; }
+    #doctor-name-wrap input {
+      width: 100%; padding: 14px 16px;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      font-family: inherit; font-size: 16px; color: #2D3436;
+      transition: border-color 0.2s;
+    }
+    #doctor-name-wrap input:focus { outline: none; border-color: #2A9D8F; }
+
+    /* ---- Contact form fields ---- */
+    .fields-stack { display: flex; flex-direction: column; gap: 14px; max-width: 400px; margin: 0 auto; }
+    .input-field { text-align: left; }
+    .input-field label { display: block; font-size: 13px; font-weight: 600; color: #1B3A5C; margin-bottom: 6px; }
+    .input-field input {
+      width: 100%; padding: 14px 16px;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      font-family: inherit; font-size: 16px; color: #2D3436;
+      transition: border-color 0.2s;
+    }
+    .input-field input:focus { outline: none; border-color: #2A9D8F; }
+    .input-field input.error { border-color: #E76F51; }
+
+    /* ---- Error box ---- */
+    .error-box {
+      display: none; background: #fef2f2; border: 1px solid #fecaca;
+      border-radius: 10px; padding: 14px 16px;
+      margin: 14px auto 0; max-width: 400px;
+      font-size: 14px; color: #b91c1c; text-align: left;
+    }
+    .error-box a { color: #b91c1c; font-weight: 600; }
+
+    /* ---- Spinner ---- */
+    .spinner {
+      display: inline-block; width: 18px; height: 18px;
+      border: 2px solid rgba(255,255,255,0.35);
+      border-top-color: #fff; border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      vertical-align: middle; margin-right: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ---- Confirmation screen ---- */
+    .confirm-divider { width: 48px; height: 3px; background: #2A9D8F; border-radius: 2px; margin: 24px auto; }
+    .confirm-body { font-size: 15px; color: #636E72; margin-bottom: 6px; line-height: 1.6; }
+    .confirm-cta-label { font-size: 16px; font-weight: 600; color: #1B3A5C; margin-bottom: 14px; }
+    .back-home-link {
+      display: block; margin-top: 20px; font-size: 14px;
+      color: #636E72; text-decoration: none;
+    }
+    .back-home-link:hover { color: #1B3A5C; }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 480px) {
+      .screen-heading { font-size: 22px; }
+      #form-container { padding: 56px 16px 40px; }
+      .option-btn { padding: 14px 16px; }
+    }
+  </style>
 </head>
 <body>
 
-  <div id="site-header"></div>
+  <!-- Progress bar -->
+  <div id="progress-bar-container" role="progressbar" aria-label="Form progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="12">
+    <div id="progress-bar-fill"></div>
+  </div>
 
-  <main>
+  <!-- Back button -->
+  <a href="/" id="back-btn" aria-label="Back to homepage">&#8592; Back</a>
 
-    <!-- Breadcrumb -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <div class="container">
-        <a href="/">Home</a> &rsaquo; <span>Get a Quote</span>
+  <div id="form-container">
+
+    <!-- ============================
+         SCREEN 1 — Coverage Type
+         ============================ -->
+    <div class="screen active" id="screen-1" aria-label="Step 1 of 8: Coverage type">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell, licensed health insurance agent" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
       </div>
-    </nav>
+      <h1 class="screen-heading">Hi! I'm Scott.</h1>
+      <p class="screen-subtext">What type of coverage are you looking for?</p>
+      <div class="options-list" role="group" aria-label="Coverage type">
+        <button class="option-btn" data-value="Business" onclick="selectCoverageType(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">🏢</span>
+          <span class="option-label">Business / Self-Employed</span>
+        </button>
+        <button class="option-btn" data-value="Family" onclick="selectCoverageType(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">👨‍👩‍👧‍👦</span>
+          <span class="option-label">Family</span>
+        </button>
+        <button class="option-btn" data-value="Individual" onclick="selectCoverageType(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">👤</span>
+          <span class="option-label">Individual</span>
+        </button>
+      </div>
+    </div>
 
-    <!-- Hero -->
-    <section class="interior-hero section-padding">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Get Your Free Health Insurance Quote</h1>
-          <p>Answer a few quick questions and I'll shop top-rated national and regional carriers to find your best rate. Free, no obligation, no pressure.</p>
+    <!-- ============================
+         SCREEN 2 — State
+         ============================ -->
+    <div class="screen" id="screen-2" aria-label="Step 2 of 8: State">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">Where are you located?</h2>
+      <div class="state-grid" role="group" aria-label="Select your state">
+        <button class="state-btn selected" data-value="Florida" onclick="selectState(this)" aria-pressed="true">🌴 Florida</button>
+        <button class="state-btn" data-value="Texas" onclick="selectState(this)" aria-pressed="false">⭐ Texas</button>
+        <button class="state-btn" data-value="Georgia" onclick="selectState(this)" aria-pressed="false">🍑 Georgia</button>
+        <button class="state-btn" data-value="Colorado" onclick="selectState(this)" aria-pressed="false">🏔 Colorado</button>
+      </div>
+      <button class="other-state-btn" id="other-state-toggle" onclick="toggleOtherState()" aria-expanded="false">Other state ▾</button>
+      <div id="other-state-select-wrapper">
+        <label for="other-state-select" class="sr-only">Select your state</label>
+        <select id="other-state-select" onchange="selectStateFromDropdown(this)" aria-label="Other state">
+          <option value="">Select your state…</option>
+          <option value="Alabama">Alabama</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="Delaware">Delaware</option>
+          <option value="Illinois">Illinois</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Iowa">Iowa</option>
+          <option value="Kansas">Kansas</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="Louisiana">Louisiana</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Minnesota">Minnesota</option>
+          <option value="Mississippi">Mississippi</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Nebraska">Nebraska</option>
+          <option value="Nevada">Nevada</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Oklahoma">Oklahoma</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="South Dakota">South Dakota</option>
+          <option value="Tennessee">Tennessee</option>
+          <option value="Utah">Utah</option>
+          <option value="Virginia">Virginia</option>
+          <option value="West Virginia">West Virginia</option>
+          <option value="Wisconsin">Wisconsin</option>
+          <option value="Wyoming">Wyoming</option>
+        </select>
+      </div>
+      <button class="continue-btn" onclick="goToScreen('screen-3')" style="margin-top:20px;">Continue &#8594;</button>
+    </div>
+
+    <!-- ============================
+         SCREEN 3 — Zip Code
+         ============================ -->
+    <div class="screen" id="screen-3" aria-label="Step 3 of 8: Zip code">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">What's your zip code?</h2>
+      <div class="zip-wrapper">
+        <label for="zip-input" class="sr-only">Zip code (5 digits)</label>
+        <input type="text" id="zip-input" inputmode="numeric" pattern="[0-9]*" maxlength="5"
+               placeholder="32901" autocomplete="postal-code" aria-label="Zip code"
+               oninput="handleZipInput(this)" onkeydown="if(event.key==='Enter')goFromZip()">
+      </div>
+      <button class="continue-btn" onclick="goFromZip()" id="zip-continue-btn">Continue &#8594;</button>
+    </div>
+
+    <!-- ============================
+         SCREEN 4B — Business group size
+         ============================ -->
+    <div class="screen" id="screen-4b" aria-label="Step 4 of 8: Group size">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">How many people need coverage?</h2>
+      <div class="options-list" role="group" aria-label="Group size">
+        <button class="option-btn" data-value="Just me" onclick="selectGroupSize(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">👤</span>
+          <span class="option-label">Just me</span>
+        </button>
+        <button class="option-btn" data-value="2-5 people" onclick="selectGroupSize(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">👥</span>
+          <span class="option-label">2–5 people</span>
+        </button>
+        <button class="option-btn" data-value="6-10 people" onclick="selectGroupSize(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">👥</span>
+          <span class="option-label">6–10 people</span>
+        </button>
+        <button class="option-btn" data-value="11-25 people" onclick="selectGroupSize(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">🏢</span>
+          <span class="option-label">11–25 people</span>
+        </button>
+        <button class="option-btn" data-value="25+" onclick="selectGroupSize(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">🏢</span>
+          <span class="option-label">25+ people</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ============================
+         SCREEN 4F — Family members
+         ============================ -->
+    <div class="screen" id="screen-4f" aria-label="Step 4 of 8: Family coverage">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">Who needs coverage?</h2>
+
+      <p class="sub-label">Select everyone who needs a plan:</p>
+      <div class="toggle-group" role="group" aria-label="Family members needing coverage">
+        <button class="toggle-btn selected" data-member="Me" onclick="toggleMember(this)" aria-pressed="true">Me</button>
+        <button class="toggle-btn" data-member="Spouse/Partner" onclick="toggleMember(this)" aria-pressed="false">Spouse / Partner</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="sub-label">How many children?</p>
+      <div class="count-group" role="group" aria-label="Number of children">
+        <button class="count-btn selected" data-children="None" onclick="selectChildren(this)" aria-pressed="true">None</button>
+        <button class="count-btn" data-children="1" onclick="selectChildren(this)" aria-pressed="false">1</button>
+        <button class="count-btn" data-children="2" onclick="selectChildren(this)" aria-pressed="false">2</button>
+        <button class="count-btn" data-children="3" onclick="selectChildren(this)" aria-pressed="false">3</button>
+        <button class="count-btn" data-children="4+" onclick="selectChildren(this)" aria-pressed="false">4+</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="field-wrap">
+        <label for="family-ages-input">Ages of everyone needing coverage (including you):</label>
+        <input type="text" id="family-ages-input" placeholder="e.g. 38, 35, 10, 7"
+               aria-label="Ages of everyone needing coverage"
+               onkeydown="if(event.key==='Enter')goFromFamily()">
+      </div>
+      <button class="continue-btn" onclick="goFromFamily()">Continue &#8594;</button>
+    </div>
+
+    <!-- ============================
+         SCREEN 4I — Individual age
+         ============================ -->
+    <div class="screen" id="screen-4i" aria-label="Step 4 of 8: Your age">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">How old are you?</h2>
+      <div class="age-wrapper">
+        <label for="age-input" class="sr-only">Your age</label>
+        <input type="number" id="age-input" inputmode="numeric" min="18" max="99"
+               placeholder="35" aria-label="Your age"
+               onkeydown="if(event.key==='Enter')goFromAge()">
+      </div>
+      <button class="continue-btn" onclick="goFromAge()">Continue &#8594;</button>
+    </div>
+
+    <!-- ============================
+         SCREEN 5 — Health Status
+         ============================ -->
+    <div class="screen" id="screen-5" aria-label="Step 5 of 8: Health status">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">How would you describe your overall health?</h2>
+      <div class="options-list" role="group" aria-label="Health status">
+        <button class="option-btn" data-value="Excellent" onclick="selectHealth(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">💪</span>
+          <span class="option-label">Excellent</span>
+        </button>
+        <button class="option-btn" data-value="Good" onclick="selectHealth(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">👍</span>
+          <span class="option-label">Good</span>
+        </button>
+        <button class="option-btn" data-value="Fair" onclick="selectHealth(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">😐</span>
+          <span class="option-label">Fair</span>
+        </button>
+        <button class="option-btn" data-value="Ongoing conditions" onclick="selectHealth(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">🩺</span>
+          <span class="option-label">I have ongoing conditions</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ============================
+         SCREEN 6 — Medical Conditions (conditional)
+         ============================ -->
+    <div class="screen" id="screen-6" aria-label="Step 6: Medical details">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">Any details that would help me find the right plan?</h2>
+      <p class="screen-subtext">Conditions, daily medications, upcoming procedures — anything relevant.</p>
+      <div class="field-wrap">
+        <label for="conditions-input" class="sr-only">Medical conditions and details</label>
+        <textarea id="conditions-input" rows="4"
+                  placeholder="e.g. Type 2 diabetes, daily metformin, upcoming knee surgery…"
+                  aria-label="Medical conditions, medications, or upcoming procedures"></textarea>
+      </div>
+      <button class="continue-btn" onclick="goFromConditions()">Continue &#8594;</button>
+    </div>
+
+    <!-- ============================
+         SCREEN 7 — Doctor Preference
+         ============================ -->
+    <div class="screen" id="screen-7" aria-label="Step 7 of 8: Doctor preference">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">Do you have preferred doctors or hospitals?</h2>
+      <div class="options-list" role="group" aria-label="Doctor preference">
+        <button class="option-btn" data-value="Yes" onclick="selectDoctorPref(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">🏥</span>
+          <span class="option-label">Yes, I want to keep my current doctors</span>
+        </button>
+        <button class="option-btn" data-value="No" onclick="selectDoctorPref(this)" aria-pressed="false">
+          <span class="option-icon" aria-hidden="true">✅</span>
+          <span class="option-label">No preference — I'm flexible</span>
+        </button>
+      </div>
+      <div id="doctor-name-wrap">
+        <label for="doctor-names-input">Which doctors or hospitals?</label>
+        <input type="text" id="doctor-names-input"
+               placeholder="e.g. Dr. Smith, Holmes Regional Medical Center"
+               aria-label="Doctor and hospital names"
+               onkeydown="if(event.key==='Enter')goFromDoctor()">
+      </div>
+      <button class="continue-btn" id="doctor-continue-btn" style="display:none;" onclick="goFromDoctor()">Continue &#8594;</button>
+    </div>
+
+    <!-- ============================
+         SCREEN 8 — Contact Info
+         ============================ -->
+    <div class="screen" id="screen-8" aria-label="Step 8 of 8: Contact information">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading">Almost done! Where should I send your options?</h2>
+      <p class="screen-subtext">I'll review everything and get back to you — usually within a few hours.</p>
+      <div class="fields-stack">
+        <div class="input-field">
+          <label for="first-name-input">First Name</label>
+          <input type="text" id="first-name-input" autocomplete="given-name"
+                 placeholder="Jane" aria-label="First name" aria-required="true">
+        </div>
+        <div class="input-field">
+          <label for="last-name-input">Last Name</label>
+          <input type="text" id="last-name-input" autocomplete="family-name"
+                 placeholder="Smith" aria-label="Last name" aria-required="true">
+        </div>
+        <div class="input-field">
+          <label for="phone-input">Phone Number</label>
+          <input type="tel" id="phone-input" inputmode="tel" autocomplete="tel"
+                 placeholder="(321) 555-0100" aria-label="Phone number" aria-required="true">
+        </div>
+        <div class="input-field">
+          <label for="email-input">Email Address</label>
+          <input type="email" id="email-input" inputmode="email" autocomplete="email"
+                 placeholder="jane@example.com" aria-label="Email address" aria-required="true">
         </div>
       </div>
-    </section>
-
-    <!-- Quote Form Section -->
-    <section class="quote-section section-padding" style="padding-top:36px;">
-      <div class="container">
-        <div class="quote-layout">
-
-          <!-- Form Area -->
-          <div class="quote-form-wrapper">
-
-            <!-- GHL Form Embed Placeholder -->
-            <div class="quote-form-embed" id="quote-form">
-              <!-- Replace this entire div's contents with GHL form embed code -->
-              <!-- <iframe src="https://your-ghl-form-url" ...></iframe> -->
-
-              <!-- Placeholder multi-step form (visual layout for GHL replacement) -->
-              <div class="quote-form-placeholder">
-                <div class="quote-step active" data-step="1">
-                  <div class="quote-step-header">
-                    <span class="quote-step-indicator">Step 1 of 5</span>
-                    <div class="quote-progress"><div class="quote-progress-bar" style="width:20%"></div></div>
-                  </div>
-                  <h2>What type of coverage are you looking for?</h2>
-                  <p>Select the option that best describes your situation.</p>
-                  <div class="quote-options">
-                    <button class="quote-option-btn" data-next="2">
-                      <span class="quote-option-icon" aria-hidden="true">&#9881;</span>
-                      <span>Business / Self-Employed</span>
-                    </button>
-                    <button class="quote-option-btn" data-next="2">
-                      <span class="quote-option-icon" aria-hidden="true">&#9825;</span>
-                      <span>Family</span>
-                    </button>
-                    <button class="quote-option-btn" data-next="2">
-                      <span class="quote-option-icon" aria-hidden="true">&#9734;</span>
-                      <span>Individual</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="quote-step" data-step="2">
-                  <div class="quote-step-header">
-                    <span class="quote-step-indicator">Step 2 of 5</span>
-                    <div class="quote-progress"><div class="quote-progress-bar" style="width:40%"></div></div>
-                  </div>
-                  <h2>Where are you located and who needs coverage?</h2>
-                  <div class="quote-fields">
-                    <div class="quote-field">
-                      <label for="quote-zip">Zip Code</label>
-                      <input type="text" id="quote-zip" placeholder="e.g. 32901" maxlength="5" inputmode="numeric">
-                    </div>
-                    <div class="quote-field">
-                      <label for="quote-ages">Ages of everyone who needs coverage</label>
-                      <input type="text" id="quote-ages" placeholder="e.g. 42, 39, 12, 8">
-                    </div>
-                  </div>
-                  <div class="quote-nav-buttons">
-                    <button class="btn btn-outline btn-sm quote-back" data-prev="1">Back</button>
-                    <button class="btn btn-primary btn-sm quote-next" data-next="3">Continue</button>
-                  </div>
-                </div>
-
-                <div class="quote-step" data-step="3">
-                  <div class="quote-step-header">
-                    <span class="quote-step-indicator">Step 3 of 5</span>
-                    <div class="quote-progress"><div class="quote-progress-bar" style="width:60%"></div></div>
-                  </div>
-                  <h2>Any specifics we should know?</h2>
-                  <p>This helps me find the right plan for your situation.</p>
-                  <div class="quote-fields">
-                    <div class="quote-field">
-                      <label for="quote-coverage-level">What level of coverage do you need?</label>
-                      <select id="quote-coverage-level">
-                        <option value="">Select one...</option>
-                        <option>Basic / Catastrophic</option>
-                        <option>Mid-Level (most popular)</option>
-                        <option>Comprehensive / Premium</option>
-                        <option>Not sure &mdash; help me decide</option>
-                      </select>
-                    </div>
-                    <div class="quote-field">
-                      <label for="quote-conditions">Any existing medical conditions or daily medications?</label>
-                      <textarea id="quote-conditions" rows="3" placeholder="Optional — helps me find plans with the best coverage for your needs"></textarea>
-                    </div>
-                  </div>
-                  <div class="quote-nav-buttons">
-                    <button class="btn btn-outline btn-sm quote-back" data-prev="2">Back</button>
-                    <button class="btn btn-primary btn-sm quote-next" data-next="4">Continue</button>
-                  </div>
-                </div>
-
-                <div class="quote-step" data-step="4">
-                  <div class="quote-step-header">
-                    <span class="quote-step-indicator">Step 4 of 5</span>
-                    <div class="quote-progress"><div class="quote-progress-bar" style="width:80%"></div></div>
-                  </div>
-                  <h2>Do you have preferred doctors or hospitals?</h2>
-                  <p>I'll make sure they're in-network with your new plan.</p>
-                  <div class="quote-fields">
-                    <div class="quote-field">
-                      <label for="quote-doctors">Doctor or hospital names (optional)</label>
-                      <textarea id="quote-doctors" rows="3" placeholder="e.g. Dr. Smith at Health First, Holmes Regional Medical Center"></textarea>
-                    </div>
-                  </div>
-                  <div class="quote-nav-buttons">
-                    <button class="btn btn-outline btn-sm quote-back" data-prev="3">Back</button>
-                    <button class="btn btn-primary btn-sm quote-next" data-next="5">Continue</button>
-                  </div>
-                </div>
-
-                <div class="quote-step" data-step="5">
-                  <div class="quote-step-header">
-                    <span class="quote-step-indicator">Step 5 of 5</span>
-                    <div class="quote-progress"><div class="quote-progress-bar" style="width:100%"></div></div>
-                  </div>
-                  <h2>How should we reach you?</h2>
-                  <p>I'll review your info and get back to you with plan options — usually within a few hours.</p>
-                  <div class="quote-fields">
-                    <div class="quote-field">
-                      <label for="quote-name">Full Name</label>
-                      <input type="text" id="quote-name" placeholder="Your name">
-                    </div>
-                    <div class="quote-field">
-                      <label for="quote-phone">Phone Number</label>
-                      <input type="tel" id="quote-phone" placeholder="(___) ___-____">
-                    </div>
-                    <div class="quote-field">
-                      <label for="quote-email">Email Address</label>
-                      <input type="email" id="quote-email" placeholder="you@example.com">
-                    </div>
-                  </div>
-                  <div class="quote-nav-buttons">
-                    <button class="btn btn-outline btn-sm quote-back" data-prev="4">Back</button>
-                    <button class="btn btn-primary quote-submit" type="button">Get My Free Quote</button>
-                  </div>
-                </div>
-
-              </div>
-              <!-- End placeholder form -->
-            </div>
-          </div>
-
-          <!-- Sidebar -->
-          <aside class="quote-sidebar">
-            <div class="quote-sidebar-card">
-              <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell, licensed health insurance agent" class="quote-sidebar-photo" loading="lazy">
-              <h3>Scott Howell</h3>
-              <p class="quote-sidebar-title">Licensed Independent Agent</p>
-              <p>I'll personally review your information and get back to you with plan options &mdash; usually within a few hours.</p>
-              <div class="quote-sidebar-contact">
-                <a href="tel:+13213209192">&#128222; (321) 320-9192</a>
-                <a href="sms:+13213209192">&#128172; Text me anytime</a>
-                <a href="mailto:howellhealthfl@gmail.com">&#9993; howellhealthfl@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="quote-sidebar-card">
-              <h3>Why Use an Agent?</h3>
-              <ul class="quote-sidebar-benefits">
-                <li>Same price as buying direct &mdash; $0 cost to you</li>
-                <li>Access to private PPO plans not on the marketplace</li>
-                <li>Side-by-side plan comparisons across carriers</li>
-                <li>Doctor/hospital network verification</li>
-                <li>Year-round support after enrollment</li>
-              </ul>
-            </div>
-
-            <div class="quote-sidebar-card">
-              <h3>Prefer to Talk?</h3>
-              <p>Skip the form and call or text me directly. I'm happy to walk through everything over the phone.</p>
-              <a href="tel:+13213209192" class="btn btn-outline btn-sm" style="width:100%;margin-top:12px;">Call (321) 320-9192</a>
-            </div>
-          </aside>
-
-        </div>
+      <div class="error-box" id="form-error" role="alert">
+        Something went wrong — please call or text me directly at
+        <a href="tel:+13213209192">(321) 320-9192</a> and I'll help you right away.
       </div>
-    </section>
+      <button class="btn-primary" id="submit-btn" onclick="submitForm()" type="button">Get My Free Quote &#8594;</button>
+    </div>
 
-  </main>
+    <!-- ============================
+         SCREEN 9 — Confirmation
+         ============================ -->
+    <div class="screen" id="screen-9" aria-label="Quote submitted" aria-live="polite">
+      <img src="/images/scott-howell-headshot-600.jpg" alt="Scott Howell" class="scott-photo">
+      <div class="form-logo" aria-hidden="true">
+        <img src="/favicon.svg" alt="">
+        <span class="form-logo-text">Howell Insurance Group</span>
+      </div>
+      <h2 class="screen-heading" id="confirm-heading">You're all set! 🎉</h2>
+      <p class="screen-subtext">I'm reviewing your info now and I'll be in touch shortly — usually within a few hours.</p>
+      <div class="confirm-divider"></div>
+      <p class="confirm-cta-label">Want to book a specific time to talk?</p>
+      <a href="/booking/" class="btn-primary" style="display:block;text-decoration:none;">Book a Call with Scott</a>
+      <p class="confirm-body" style="margin-top:18px;">Or just sit tight — I'll call or text you soon.</p>
+      <a href="/" class="back-home-link">&#8592; Back to homepage</a>
+    </div>
 
-  <div id="site-footer"></div>
+  </div><!-- /#form-container -->
 
-  <script src="/js/components.js" defer></script>
-  <script src="/js/main.js" defer></script>
-
-  <!-- Quote Form Step Navigation (placeholder — will be replaced by GHL embed) -->
   <script>
-  (function() {
-    var steps = document.querySelectorAll('.quote-step');
-    if (!steps.length) return;
+  (function () {
+    'use strict';
 
-    function showStep(n) {
-      for (var i = 0; i < steps.length; i++) {
-        steps[i].classList.remove('active');
+    /* ---- Form state ---- */
+    var fd = {
+      coverage_type: '',
+      state: 'Florida',
+      zip_code: '',
+      group_size: '',
+      family_members: ['Me'],
+      family_children: 'None',
+      ages: '',
+      health_status: '',
+      medical_conditions: '',
+      doctor_preference: '',
+      preferred_providers: '',
+      first_name: '', last_name: '', phone: '', email: ''
+    };
+
+    /* ---- Navigation history ---- */
+    var navStack = ['screen-1'];
+
+    /* ---- Progress % per screen ---- */
+    var progressMap = {
+      'screen-1': 12, 'screen-2': 25, 'screen-3': 37,
+      'screen-4b': 50, 'screen-4f': 50, 'screen-4i': 50,
+      'screen-5': 62, 'screen-6': 68, 'screen-7': 76,
+      'screen-8': 90, 'screen-9': 100
+    };
+
+    /* ---- Core navigation ---- */
+    window.goToScreen = function (targetId) {
+      var fromId = navStack[navStack.length - 1];
+      var fromEl = document.getElementById(fromId);
+      var toEl   = document.getElementById(targetId);
+      if (!toEl || fromId === targetId) return;
+
+      navStack.push(targetId);
+
+      if (fromEl) fromEl.classList.remove('active');
+
+      // Force animation restart
+      toEl.classList.remove('active');
+      void toEl.offsetWidth;
+      toEl.classList.add('active');
+
+      window.scrollTo(0, 0);
+
+      // Update progress bar
+      var pct = progressMap[targetId] || 12;
+      document.getElementById('progress-bar-fill').style.width = pct + '%';
+      var pb = document.getElementById('progress-bar-container');
+      pb.setAttribute('aria-valuenow', pct);
+
+      // Update back button
+      refreshBackBtn();
+
+      // Focus first interactive element
+      setTimeout(function () {
+        var focusable = toEl.querySelector('button:not([disabled]), input, select, textarea, a[href]');
+        if (focusable) focusable.focus();
+      }, 50);
+    };
+
+    function refreshBackBtn () {
+      var btn = document.getElementById('back-btn');
+      if (navStack.length > 1) {
+        btn.removeAttribute('href');
+        btn.setAttribute('aria-label', 'Go to previous step');
+      } else {
+        btn.setAttribute('href', '/');
+        btn.setAttribute('aria-label', 'Back to homepage');
       }
-      var target = document.querySelector('.quote-step[data-step="' + n + '"]');
-      if (target) target.classList.add('active');
     }
 
-    document.querySelectorAll('.quote-option-btn, .quote-next').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var next = this.getAttribute('data-next');
-        if (next) showStep(next);
-      });
+    document.getElementById('back-btn').addEventListener('click', function (e) {
+      if (navStack.length > 1) {
+        e.preventDefault();
+        navStack.pop();
+        var prevId = navStack[navStack.length - 1];
+
+        var currentEl = document.querySelector('.screen.active');
+        if (currentEl) currentEl.classList.remove('active');
+
+        var prevEl = document.getElementById(prevId);
+        if (prevEl) {
+          prevEl.classList.remove('active');
+          void prevEl.offsetWidth;
+          prevEl.classList.add('active');
+          window.scrollTo(0, 0);
+          setTimeout(function () {
+            var f = prevEl.querySelector('button:not([disabled]), input, select, textarea');
+            if (f) f.focus();
+          }, 50);
+        }
+
+        var pct = progressMap[prevId] || 12;
+        document.getElementById('progress-bar-fill').style.width = pct + '%';
+        document.getElementById('progress-bar-container').setAttribute('aria-valuenow', pct);
+
+        refreshBackBtn();
+      }
+      // else default href="/" navigates home
     });
 
-    document.querySelectorAll('.quote-back').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var prev = this.getAttribute('data-prev');
-        if (prev) showStep(prev);
+    /* ============================================================
+       SCREEN 1 — Coverage Type
+       ============================================================ */
+    window.selectCoverageType = function (btn) {
+      fd.coverage_type = btn.dataset.value;
+      document.querySelectorAll('#screen-1 .option-btn').forEach(function (b) {
+        b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
       });
+      btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+      setTimeout(function () { goToScreen('screen-2'); }, 220);
+    };
+
+    /* ============================================================
+       SCREEN 2 — State
+       ============================================================ */
+    window.selectState = function (btn) {
+      fd.state = btn.dataset.value;
+      document.querySelectorAll('#screen-2 .state-btn').forEach(function (b) {
+        b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+      // Close "other" dropdown
+      document.getElementById('other-state-select-wrapper').style.display = 'none';
+      document.getElementById('other-state-select').value = '';
+      var toggle = document.getElementById('other-state-toggle');
+      toggle.textContent = 'Other state \u25be';
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    window.toggleOtherState = function () {
+      var wrapper = document.getElementById('other-state-select-wrapper');
+      var toggle  = document.getElementById('other-state-toggle');
+      var isOpen  = wrapper.style.display === 'block';
+      wrapper.style.display = isOpen ? 'none' : 'block';
+      toggle.textContent = isOpen ? 'Other state \u25be' : 'Other state \u25b4';
+      toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      if (!isOpen) {
+        // Deselect featured buttons
+        document.querySelectorAll('#screen-2 .state-btn').forEach(function (b) {
+          b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
+        });
+        setTimeout(function () { document.getElementById('other-state-select').focus(); }, 50);
+      }
+    };
+
+    window.selectStateFromDropdown = function (sel) {
+      if (sel.value) fd.state = sel.value;
+    };
+
+    /* ============================================================
+       SCREEN 3 — Zip Code
+       ============================================================ */
+    window.handleZipInput = function (input) {
+      input.value = input.value.replace(/\D/g, '');
+      fd.zip_code = input.value;
+      if (input.value.length === 5) {
+        setTimeout(function () { goFromZip(); }, 350);
+      }
+    };
+
+    window.goFromZip = function () {
+      var zip = document.getElementById('zip-input').value.replace(/\D/g, '');
+      if (zip.length < 5) {
+        var inp = document.getElementById('zip-input');
+        inp.style.borderColor = '#E76F51';
+        inp.focus();
+        return;
+      }
+      fd.zip_code = zip;
+      document.getElementById('zip-input').style.borderColor = '';
+      if (fd.coverage_type === 'Business') {
+        goToScreen('screen-4b');
+      } else if (fd.coverage_type === 'Family') {
+        goToScreen('screen-4f');
+      } else {
+        goToScreen('screen-4i');
+      }
+    };
+
+    /* ============================================================
+       SCREEN 4B — Business group size
+       ============================================================ */
+    window.selectGroupSize = function (btn) {
+      fd.group_size = btn.dataset.value;
+      document.querySelectorAll('#screen-4b .option-btn').forEach(function (b) {
+        b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+      setTimeout(function () { goToScreen('screen-5'); }, 220);
+    };
+
+    /* ============================================================
+       SCREEN 4F — Family
+       ============================================================ */
+    window.toggleMember = function (btn) {
+      if (btn.dataset.member === 'Me') return; // always required
+      btn.classList.toggle('selected');
+      var on = btn.classList.contains('selected');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (on) {
+        if (fd.family_members.indexOf(btn.dataset.member) === -1) fd.family_members.push(btn.dataset.member);
+      } else {
+        fd.family_members = fd.family_members.filter(function (m) { return m !== btn.dataset.member; });
+      }
+    };
+
+    window.selectChildren = function (btn) {
+      fd.family_children = btn.dataset.children;
+      document.querySelectorAll('#screen-4f .count-btn').forEach(function (b) {
+        b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+    };
+
+    window.goFromFamily = function () {
+      fd.ages = document.getElementById('family-ages-input').value.trim();
+      goToScreen('screen-5');
+    };
+
+    /* ============================================================
+       SCREEN 4I — Individual age
+       ============================================================ */
+    window.goFromAge = function () {
+      var inp = document.getElementById('age-input');
+      if (!inp.value.trim()) {
+        inp.style.borderColor = '#E76F51'; inp.focus(); return;
+      }
+      fd.ages = inp.value.trim();
+      inp.style.borderColor = '';
+      goToScreen('screen-5');
+    };
+
+    /* ============================================================
+       SCREEN 5 — Health Status
+       ============================================================ */
+    window.selectHealth = function (btn) {
+      fd.health_status = btn.dataset.value;
+      document.querySelectorAll('#screen-5 .option-btn').forEach(function (b) {
+        b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+      setTimeout(function () {
+        goToScreen(fd.health_status === 'Ongoing conditions' ? 'screen-6' : 'screen-7');
+      }, 220);
+    };
+
+    /* ============================================================
+       SCREEN 6 — Medical Conditions (conditional)
+       ============================================================ */
+    window.goFromConditions = function () {
+      fd.medical_conditions = document.getElementById('conditions-input').value.trim();
+      goToScreen('screen-7');
+    };
+
+    /* ============================================================
+       SCREEN 7 — Doctor Preference
+       ============================================================ */
+    window.selectDoctorPref = function (btn) {
+      fd.doctor_preference = btn.dataset.value;
+      document.querySelectorAll('#screen-7 .option-btn').forEach(function (b) {
+        b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+
+      var nameWrap  = document.getElementById('doctor-name-wrap');
+      var contBtn   = document.getElementById('doctor-continue-btn');
+
+      if (btn.dataset.value === 'Yes') {
+        nameWrap.style.display = 'block';
+        contBtn.style.display  = 'block';
+        setTimeout(function () { document.getElementById('doctor-names-input').focus(); }, 80);
+      } else {
+        nameWrap.style.display = 'none';
+        contBtn.style.display  = 'none';
+        setTimeout(function () { goFromDoctor(); }, 220);
+      }
+    };
+
+    window.goFromDoctor = function () {
+      if (fd.doctor_preference === 'Yes') {
+        fd.preferred_providers = document.getElementById('doctor-names-input').value.trim();
+      }
+      goToScreen('screen-8');
+    };
+
+    /* ============================================================
+       SCREEN 8 — Contact Info & Submit
+       ============================================================ */
+    window.submitForm = function () {
+      var fn = document.getElementById('first-name-input');
+      var ln = document.getElementById('last-name-input');
+      var ph = document.getElementById('phone-input');
+      var em = document.getElementById('email-input');
+
+      var valid = true;
+      [fn, ln, ph, em].forEach(function (el) {
+        if (!el.value.trim()) { el.classList.add('error'); valid = false; }
+        else el.classList.remove('error');
+      });
+      if (!valid) { fn.value.trim() ? (ln.value.trim() ? (ph.value.trim() ? em.focus() : ph.focus()) : ln.focus()) : fn.focus(); return; }
+
+      fd.first_name = fn.value.trim();
+      fd.last_name  = ln.value.trim();
+      fd.phone      = ph.value.trim();
+      fd.email      = em.value.trim();
+
+      /* Build ages string for family path */
+      var ages = fd.ages;
+      if (fd.coverage_type === 'Family' && !ages) {
+        ages = fd.family_members.join(', ');
+      }
+
+      var payload = {
+        first_name:          fd.first_name,
+        last_name:           fd.last_name,
+        phone:               fd.phone,
+        email:               fd.email,
+        coverage_type:       fd.coverage_type,
+        state:               fd.state,
+        zip_code:            fd.zip_code,
+        ages:                ages,
+        group_size:          fd.group_size,
+        health_status:       fd.health_status,
+        medical_conditions:  fd.medical_conditions,
+        preferred_providers: fd.preferred_providers,
+        source:              'website_quote_form'
+      };
+
+      var submitBtn = document.getElementById('submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner" aria-hidden="true"></span>Sending\u2026';
+      document.getElementById('form-error').style.display = 'none';
+
+      fetch('https://services.leadconnectorhq.com/hooks/9eP0JiNnMrFsQDUIYAfx/webhook-trigger/a94272a3-d507-4a77-8760-2c297f9f9999', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function () {
+        var h = document.getElementById('confirm-heading');
+        if (h) h.textContent = 'You\u2019re all set, ' + fd.first_name + '! \uD83C\uDF89';
+        goToScreen('screen-9');
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Get My Free Quote \u2192';
+        document.getElementById('form-error').style.display = 'block';
+      });
+    };
+
+    /* ---- Clear error borders on input ---- */
+    ['first-name-input', 'last-name-input', 'phone-input', 'email-input'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('input', function () { this.classList.remove('error'); });
     });
 
-    var submitBtn = document.querySelector('.quote-submit');
-    if (submitBtn) {
-      submitBtn.addEventListener('click', function() {
-        alert('This form is a placeholder. The actual form will be embedded from GHL/PowerSuite and will submit directly to Scott\'s CRM.');
-      });
-    }
-  })();
+    /* ---- Clear error border on zip ---- */
+    var zipEl = document.getElementById('zip-input');
+    if (zipEl) zipEl.addEventListener('input', function () { this.style.borderColor = ''; });
+
+    /* ---- Clear error border on age ---- */
+    var ageEl = document.getElementById('age-input');
+    if (ageEl) ageEl.addEventListener('input', function () { this.style.borderColor = ''; });
+
+  }());
   </script>
+
 </body>
 </html>
