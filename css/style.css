@@ -157,6 +157,18 @@ p + p { margin-top: 1em; }
   color: var(--white);
 }
 
+.btn-teal {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.btn-teal:hover {
+  background: var(--teal-light);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
 .btn-sm {
   padding: 10px 20px;
   font-size: 0.9rem;
