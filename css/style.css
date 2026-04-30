@@ -169,6 +169,23 @@ p + p { margin-top: 1em; }
   box-shadow: var(--shadow-md);
 }
 
+/* Get a Quote on dark backgrounds: white fill with teal text */
+.final-cta .btn-teal,
+.location-hero .btn-teal,
+.hero .btn-teal {
+  background: var(--white);
+  color: var(--teal);
+}
+
+.final-cta .btn-teal:hover,
+.location-hero .btn-teal:hover,
+.hero .btn-teal:hover {
+  background: var(--light-bg);
+  color: var(--teal);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
 .btn-sm {
   padding: 10px 20px;
   font-size: 0.9rem;
