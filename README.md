@@ -16,8 +16,6 @@ Every page is a folder containing an `index.html`, which gives clean URLs (`/ser
 index.html                 Homepage
 about/                     About Scott
 services/                  Services hub + one folder per service
-quote/                     Multi-step quote form (GHL embed placeholder)
-booking/                   Strategy-call booking
 faq/                       FAQ (FAQPage schema)
 contact/                   Contact info, hours, service area
 blog/                      Blog hub + one folder per article
@@ -38,6 +36,10 @@ docs/                      Original strategy & build plan (.docx)
 
 Pages don't contain the header or footer markup. Each page has empty `#site-header` and `#site-footer` elements, and `js/components.js` fetches `/shared/header.html` and `/shared/footer.html` at runtime and inserts them. Edit nav and footer links in `shared/` only.
 
+### Calls to action
+
+Every booking/quote CTA links to Scott's Google Calendar appointment page (`https://calendar.app.google/96SHQ8ZCwAFSs4e46`) and opens in a new tab. The old `/quote/` and `/booking/` pages were removed; `vercel.json` permanently redirects those paths to the calendar so old links keep working.
+
 ### Structured data
 
 Each page carries its own JSON-LD in `<head>` (LocalBusiness, FAQPage, BlogPosting, BreadcrumbList, Person, as appropriate). When adding a page, copy the schema pattern from a similar existing page and add the URL to `sitemap.xml`.
@@ -57,6 +59,6 @@ Then open http://localhost:8000.
 Hosted on Vercel (project `howell-health-site`, team `powersuite-4078's projects`), connected to `github.com/powersuite/howell-health-site`.
 
 - Every push to `main` triggers a production deploy automatically — usually live within a minute.
-- No build command or output directory is configured; Vercel serves the repo root as static files.
+- No build command or output directory is configured; Vercel serves the repo root as static files. `vercel.json` holds only redirects.
 - Domains: `www.howellinsurancegroup.com` is primary; `howellinsurancegroup.com` redirects to it.
 - Each deploy gets an immutable preview URL; rollbacks are done from the Vercel dashboard.

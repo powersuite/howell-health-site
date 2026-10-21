@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/quote/:path*", "destination": "https://calendar.app.google/96SHQ8ZCwAFSs4e46", "permanent": true },
+    { "source": "/booking/:path*", "destination": "https://calendar.app.google/96SHQ8ZCwAFSs4e46", "permanent": true }
+  ]
+}

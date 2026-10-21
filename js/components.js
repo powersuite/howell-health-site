@@ -66,12 +66,6 @@
         mobileLinks[m].setAttribute('aria-current', 'page');
       }
     }
-    // Highlight "Get a Quote" nav CTA on /quote/ pages
-    if (path.indexOf('/quote/') === 0) {
-      var quoteCta = document.querySelector('.nav-cta');
-      if (quoteCta) quoteCta.setAttribute('aria-current', 'page');
-    }
-
     /* --- Announcement Bar Close --- */
     var closeBtn = document.querySelector('.announcement-bar-close');
     if (closeBtn) {

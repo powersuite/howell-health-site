@@ -79,7 +79,7 @@ During our conversation, I ask these key questions to understand your situation 
 ## The Booking Process
 
 ### Option 1: Book a Strategy Call Online
-Schedule a free 20-minute strategy call at a time that works for you through my online calendar.
+Schedule a free 20-minute strategy call at a time that works for you through my online calendar: https://calendar.app.google/96SHQ8ZCwAFSs4e46
 
 ### Option 2: Call Me Directly
 (321) 320-9192 — I pick up. Not a call center, not a recording.
@@ -89,16 +89,6 @@ Schedule a free 20-minute strategy call at a time that works for you through my 
 
 ### Option 4: Email Me
 howellhealthfl@gmail.com — Send details of your situation and I'll respond within one business day.
-
-### Option 5: Online Quote Form
-Fill out a quick multi-step form on the website:
-- Step 1: Coverage type (individual, family, business/self-employed)
-- Step 2: Zip code + ages of everyone who needs coverage
-- Step 3: Coverage level preference + any existing conditions
-- Step 4: Preferred doctors or hospitals
-- Step 5: Your name, phone, and email
-
-I'll personally review the information and get back with plan options — usually within a few hours.
 
 ---
 
