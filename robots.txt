@@ -13,4 +13,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://howellhealthfl.com/sitemap.xml
+Sitemap: https://www.howellinsurancegroup.com/sitemap.xml
