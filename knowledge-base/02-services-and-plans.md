@@ -57,7 +57,7 @@ PPO (Preferred Provider Organization) plans are built around flexibility:
 Most Florida agents are "captive" — they work for or are contracted exclusively with a single carrier that primarily sells marketplace HMO/EPO plans. They literally cannot offer private PPO plans because they don't have contracts with the carriers that sell them. Independent agents like me have contracts with multiple carriers across both the marketplace and private markets, so I can show you both options side by side.
 
 ### How I Help
-Book a 20-minute strategy call or text me at (321) 320-9192. I'll ask about your coverage needs, preferred doctors, and budget, then shop top-rated national and regional carriers to find your best options. You choose the plan that fits, and I handle all the paperwork.
+Book a 20-minute strategy call or text me at (689) 986-4762. I'll ask about your coverage needs, preferred doctors, and budget, then shop top-rated national and regional carriers to find your best options. You choose the plan that fits, and I handle all the paperwork.
 
 ---
 

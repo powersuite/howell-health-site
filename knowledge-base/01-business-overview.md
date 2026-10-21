@@ -75,8 +75,8 @@ Alabama, Arkansas, Colorado, Delaware, **Florida** (home state), Georgia, Illino
 
 ## Contact Information
 
-- **Phone:** (321) 320-9192
-- **Text:** (321) 320-9192 — text anytime, I check messages evenings and weekends
+- **Phone:** (689) 986-4762
+- **Text:** (689) 986-4762 — text anytime, I check messages evenings and weekends
 - **Email:** howellhealthfl@gmail.com
 - **Booking:** Free 20-minute strategy call — https://calendar.app.google/96SHQ8ZCwAFSs4e46
 - **Website:** www.howellinsurancegroup.com

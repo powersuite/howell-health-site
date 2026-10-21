@@ -226,7 +226,7 @@ No. My services are 100% free. The insurance carrier pays my commission, so you 
 I serve clients in Brevard County, Florida (Melbourne, Palm Bay, Cocoa Beach, Titusville, Merritt Island, and all surrounding communities) as well as clients throughout Florida and across all 30 states where I hold active licenses: AL, AR, CO, DE, FL, GA, IL, IN, IA, KS, KY, LA, MI, MN, MS, MO, NE, NV, NC, OH, OK, SC, SD, TN, TX, UT, VA, WV, WI, WY.
 
 ### How do I apply for a plan through Scott Howell?
-The process is simple and free. Book a 20-minute strategy call or text me at (321) 320-9192. I'll ask about your coverage needs, preferred doctors, and budget, then shop top-rated national and regional carriers to find your best options. You choose the plan that fits, and I handle all the paperwork.
+The process is simple and free. Book a 20-minute strategy call or text me at (689) 986-4762. I'll ask about your coverage needs, preferred doctors, and budget, then shop top-rated national and regional carriers to find your best options. You choose the plan that fits, and I handle all the paperwork.
 
 ---
 

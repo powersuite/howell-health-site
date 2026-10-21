@@ -82,10 +82,10 @@ During our conversation, I ask these key questions to understand your situation 
 Schedule a free 20-minute strategy call at a time that works for you through my online calendar: https://calendar.app.google/96SHQ8ZCwAFSs4e46
 
 ### Option 2: Call Me Directly
-(321) 320-9192 — I pick up. Not a call center, not a recording.
+(689) 986-4762 — I pick up. Not a call center, not a recording.
 
 ### Option 3: Text Me
-(321) 320-9192 — Text anytime. I check messages evenings and weekends. Send me your situation and I'll get back to you quickly.
+(689) 986-4762 — Text anytime. I check messages evenings and weekends. Send me your situation and I'll get back to you quickly.
 
 ### Option 4: Email Me
 howellhealthfl@gmail.com — Send details of your situation and I'll respond within one business day.
